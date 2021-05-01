@@ -3,6 +3,7 @@ from utils import store_inventory as si
 
 print(' ----- The Factor Method Pattern ----- \n')
 
+
 # for previous reference
 class SimplePizzaFactory:
 
@@ -17,7 +18,8 @@ class SimplePizzaFactory:
         try:
             return pizza_selector[type]
         except KeyError:
-            raise(f'pizza type {type} is invalid')
+            raise (f'pizza type {type} is invalid')
+
 
 def main():
     nyStore = si.NYStylePizzaStore()
